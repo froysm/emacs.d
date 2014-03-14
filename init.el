@@ -25,6 +25,28 @@
 (add-hook 'enh-ruby-mode-hook 'electric-pair-mode)
 (add-hook 'enh-ruby-mode-hook 'robe-mode)
 
+;; Enable Ido Mode
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(ido-mode 1) 
+
+;; Hooks for Web Mode
+(defun web-mode-hook ()
+  (setq web-mode-css-indent-offset 2)
+)
+(add-hook 'web-mode-hook 'web-mode-hook)
+(add-hook 'web-mode-hook 'electric-pair-mode)
+
+;; Enable Web Mode
+(require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+
+;; Disable SCSS compilation at save.
+(setq scss-compile-at-save nil)
+
+;; Change the indent size on CSS/SCSS
+(setq css-indent-offset 2)
+
 ;; Emacs for Linux (strip tease)
 
 ;; Prevent the cursor from blinking
