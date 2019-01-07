@@ -6,6 +6,7 @@
 (depends-on "enh-ruby-mode")
 (depends-on "epl")
 (depends-on "f")
+(depends-on "magit")
 (depends-on "minitest")
 (depends-on "monokai-theme")
 (depends-on "pallet")
