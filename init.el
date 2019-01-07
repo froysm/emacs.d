@@ -6,8 +6,7 @@
       (list (cons "." (expand-file-name "backup" user-emacs-directory))))
 (require 'package)
 (add-to-list 'package-archives
-	     '("marmalade" .
-	       "http://marmalade-repo.org/packages/"))
+             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (package-initialize)
 
 (require 'cask "~/.cask/cask.el")
@@ -184,4 +183,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes (quote ("9c26d896b2668f212f39f5b0206c5e3f0ac301611ced8a6f74afe4ee9c7e6311" default))))
+ '(custom-safe-themes
+   (quote
+    ("9c26d896b2668f212f39f5b0206c5e3f0ac301611ced8a6f74afe4ee9c7e6311" default)))
+ '(package-selected-packages
+   (quote
+    (python-mode web-mode robe pallet monokai-theme minitest magit enh-ruby-mode ag))))

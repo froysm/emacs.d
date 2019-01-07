@@ -10,6 +10,7 @@
 (depends-on "minitest")
 (depends-on "monokai-theme")
 (depends-on "pallet")
+(depends-on "python-mode")
 (depends-on "robe")
 (depends-on "s")
 (depends-on "web-mode")
