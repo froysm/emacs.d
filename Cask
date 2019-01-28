@@ -7,6 +7,7 @@
 (depends-on "epl")
 (depends-on "f")
 (depends-on "magit")
+(depends-on "markdown-mode")
 (depends-on "minitest")
 (depends-on "monokai-theme")
 (depends-on "pallet")
@@ -14,3 +15,4 @@
 (depends-on "robe")
 (depends-on "s")
 (depends-on "web-mode")
+(depends-on "yaml-mode")

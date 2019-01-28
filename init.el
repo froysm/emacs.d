@@ -188,4 +188,4 @@
     ("9c26d896b2668f212f39f5b0206c5e3f0ac301611ced8a6f74afe4ee9c7e6311" default)))
  '(package-selected-packages
    (quote
-    (python-mode web-mode robe pallet monokai-theme minitest magit enh-ruby-mode ag))))
+    (yaml-mode f markdown-mode python-mode web-mode robe pallet monokai-theme minitest magit enh-ruby-mode ag))))
