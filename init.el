@@ -9,7 +9,12 @@
              '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (package-initialize)
 
-(require 'cask "~/.cask/cask.el")
+(if (string-equal system-type "darwin")
+    (require 'cask "/usr/local/share/emacs/site-lisp/cask/cask.el"))
+
+(if (string-equal system-type "gnu/linux")
+    (require 'cask "~/.cask/cask.el"))
+
 (cask-initialize)
 
 ;; Monokai theme

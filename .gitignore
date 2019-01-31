@@ -15,3 +15,6 @@ ido.last
 
 # Cask
 .cask
+
+# Elpa
+elpa/
